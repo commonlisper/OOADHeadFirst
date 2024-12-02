@@ -1,11 +1,7 @@
 package chapter01.tests;
 
 import chapter01.Inventory;
-import chapter01.domain.Guitar;
-import chapter01.domain.GuitarSpec;
-import chapter01.domain.Builder;
-import chapter01.domain.Type;
-import chapter01.domain.Wood;
+import chapter01.domain.*;
 
 import java.util.List;
 

@@ -3,11 +3,7 @@ package chapter01;
 import java.util.List;
 import java.util.ArrayList;
 
-import chapter01.domain.Guitar;
-import chapter01.domain.Type;
-import chapter01.domain.Builder;
-import chapter01.domain.Wood;
-import chapter01.domain.GuitarSpec;
+import chapter01.domain.*;
 
 public class Inventory {
     private final List<Guitar> guitars = new ArrayList<>();
