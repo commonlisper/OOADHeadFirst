@@ -22,18 +22,19 @@ public class GuitarSpec {
     }
 
     public boolean equals(Object obj) {
-        if (!(obj instanceof GuitarSpec guitarSpec)) return false;
-        if (getBuilder() != guitarSpec.getBuilder()) return false;
+        if (!(obj instanceof GuitarSpec otherSpec)) return false;
+        if (builder != otherSpec.getBuilder()) return false;
 
-        if (getModel().isEmpty() &&
-                getModel().isBlank() &&
-                !getModel().equalsIgnoreCase(guitarSpec.getModel()))
+        if (model != null &&
+                !model.isEmpty() &&
+                !model.isBlank() &&
+                !getModel().equalsIgnoreCase(otherSpec.getModel()))
             return false;
 
-        if (getType() != guitarSpec.getType()) return false;
-        if (getNumStrings() != guitarSpec.getNumStrings()) return false;
-        if (getBackWood() != guitarSpec.getBackWood()) return false;
-        if (getTopWood() != guitarSpec.getTopWood()) return false;
+        if (type != otherSpec.getType()) return false;
+        if (numStrings != otherSpec.getNumStrings()) return false;
+        if (backWood != otherSpec.getBackWood()) return false;
+        if (topWood != otherSpec.getTopWood()) return false;
 
         return true;
     }
