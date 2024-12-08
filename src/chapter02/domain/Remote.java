@@ -1,7 +1,7 @@
 package chapter02.domain;
 
 public class Remote {
-    private DogDoor door;
+    private final DogDoor door;
 
     public Remote(DogDoor door) {
         this.door = door;
