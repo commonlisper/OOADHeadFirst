@@ -28,7 +28,7 @@ public class GuitarSpec {
         if (model != null &&
                 !model.isEmpty() &&
                 !model.isBlank() &&
-                !getModel().equalsIgnoreCase(otherSpec.getModel()))
+                !model.equalsIgnoreCase(otherSpec.getModel()))
             return false;
 
         if (type != otherSpec.getType()) return false;

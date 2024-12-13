@@ -8,7 +8,7 @@ import chapter01.domain.*;
 public class Inventory {
     private final List<Guitar> guitars = new ArrayList<>();
 
-    public void AddGuitar(String serialNumber, double price,
+    public void addGuitar(String serialNumber, double price,
                           Builder builder, String model, Type type, int numStrings,
                           Wood backWood, Wood topWood) {
         GuitarSpec guitarSpec = new GuitarSpec(builder, model, type, numStrings, backWood, topWood);
@@ -16,7 +16,7 @@ public class Inventory {
         guitars.add(guitar);
     }
 
-    public Guitar GetGuitar(String serialNumber) {
+    public Guitar getGuitar(String serialNumber) {
         for (Guitar guitar : guitars) {
             if (guitar.getSerialNumber().equalsIgnoreCase(serialNumber)) {
                 return guitar;
@@ -26,7 +26,7 @@ public class Inventory {
         return null;
     }
 
-    public List<Guitar> Search(GuitarSpec searchedSpec) {
+    public List<Guitar> search(GuitarSpec searchedSpec) {
         List<Guitar> searchedGuitars = new ArrayList<>();
 
         for (Guitar guitar : guitars) {
